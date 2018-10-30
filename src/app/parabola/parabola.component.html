@@ -1,0 +1,30 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Parabola
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <mat-form-field>
+    <input matInput type="number" placeholder="Vertical Stretch/Compression"
+    [(ngModel)]="this.v_stretch">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Vertical Translation" 
+    [(ngModel)]="this.v_translation">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Horizontal Stretch/Compression"
+    [(ngModel)]="this.v_stretch">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Horizontal Translation" 
+    [(ngModel)]="this.v_translation">
+  </mat-form-field>
+
+  <mat-action-row>
+    <button mat-button color="primary">Graph</button>
+  </mat-action-row>
+
+</mat-expansion-panel>

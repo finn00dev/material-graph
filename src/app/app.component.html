@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <span>Somsed</span>
+</mat-toolbar>
+<div>
+  <button mat-raised-button (click)="this.openParabola()">Parabola</button>
+  <button mat-raised-button (click)="this.openExponential()">Exponential</button>
+  <button mat-raised-button>Reciprocal</button>
+</div>
+<app-parabola *ngIf="this.PARABOLA_OPEN"></app-parabola>
+<app-exponential *ngIf="this.EXPO_OPEN"></app-exponential>
+
